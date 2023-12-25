@@ -1,0 +1,149 @@
+body{
+    background-color: rgb(251, 245, 251);
+    margin: 0;
+}
+main, header{
+    padding: 20px;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+.nav{
+    
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-items ul{
+    display: flex;
+    justify-content: space-between;
+}
+.lists li{
+    list-style: none;
+    margin-right: 25px;
+    font-size:medium;
+    font-weight: 700;
+}
+
+/* banner style  */
+.banner{
+    margin-top: 50px;
+    margin-bottom: 130px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-title{
+    font-size: 65px;
+    margin-bottom: 10px;
+}
+.banner-image{
+    background-image: url("../images/Circle\ design.svg");
+    background-repeat: no-repeat;
+}
+.btn-primary{
+    padding: 15px 30px;
+    color: white;
+    font-weight: 600;
+    border-radius: 25px;
+    background-color: rgb(238, 58, 103);
+    border: none;
+}
+.websites{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 40px 0 40px 0;
+}
+
+/* popular section  */
+.popular{
+    margin-top: 80px;
+    font-size: 35px;
+    text-align: center;
+}
+.fa-star-half-stroke, .fa-star{
+    color: goldenrod;
+}
+.popular-cards{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: fit-content;
+    box-shadow: 3px 3px 3px 3px rgb(244, 240, 240);
+}
+.featured-section{
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.featured-title{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 45px;
+    font-weight: 900;
+}
+
+/* footer styles  */
+.footer{
+    background-color: rgb(19, 16, 39);
+    color: white;
+    text-align: center;
+    padding: 40px 0 40px 0;
+    font-weight: bold;
+    margin: 100px 0 0 0 ;
+}
+@media screen and (max-width:587px) {
+    main, header{
+        padding: 10px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+    .banner-image{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .banner-text{
+        text-align: center;
+    }
+    .banner-title{
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    .banner img{
+        width: 100%;
+    }
+    .websites{
+        flex-wrap: wrap;
+        column-gap: 10px;
+        row-gap: 30px;
+        /* justify-content: space-around; */
+    }
+    hr{
+        display: none;
+    }
+    .featured-section{
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+    .featured-text{
+        text-align: center;
+    }
+    .featured-section br{
+        display: none;
+    }
+}
